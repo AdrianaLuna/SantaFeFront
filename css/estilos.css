@@ -1,0 +1,29 @@
+body {
+    background: cornsilk url(../imagenes/fondo.jpg) ;
+    background-size: cover;
+}
+
+h1 {
+    color: rgb(142, 25, 146);
+    font-size: 350%;
+    text-align: center;
+    text-decoration-line:underline;
+}
+
+h2 {
+    color:rgb(165, 121, 207);
+    font-size: 200%;
+    text-decoration-line: underline;
+}
+
+.que {
+    text-align: center;
+}
+
+img {
+    width: 60%;
+}
+
+h3 {
+    color: palevioletred;
+}
