@@ -2,14 +2,12 @@ body {
     background: cornsilk url(../imagenes/fondo.jpg) ;
     background-size: cover;
 }
-
 h1 {
     color: rgb(142, 25, 146);
     font-size: 350%;
     text-align: center;
     text-decoration-line:underline;
 }
-
 h2 {
     color:rgb(165, 121, 207);
     font-size: 200%;
@@ -23,15 +21,27 @@ p {
 .que {
     text-align: center;
 }
-
 img {
     width: 30%;
 }
-
 h3 {
     color: palevioletred;
 }
-
 .centro {
     text-align: center;
+}
+.iconowhat {
+    width: 80px;
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+}
+.redes {
+    width: 100px;
+}
+header {
+    background-color: rgb(229, 186, 216) ;
+}
+footer {
+    background-color: white;
 }
