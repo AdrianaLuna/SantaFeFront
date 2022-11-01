@@ -1,12 +1,41 @@
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(243, 237, 241) ; 
+}
+.logo {
+    width: 25%;
+    margin: 10px;
+}
+.titulo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline;
+    color: indigo;
+    width: 50%;
+    margin: 10px;
+}
+.redes1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    padding: 10px;
+    background-color: #CCD1D1;
+}
 body {
     background: cornsilk url(../imagenes/fondo.jpg) ;
     background-size: cover;
 }
-h1 {
-    color: rgb(142, 25, 146);
-    font-size: 350%;
-    text-align: center;
-    text-decoration-line:underline;
+nav {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 h2 {
     color:rgb(165, 121, 207);
@@ -18,14 +47,14 @@ p {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
-.que {
-    text-align: center;
-}
 img {
     width: 30%;
 }
 h3 {
     color: palevioletred;
+}
+.que {
+    text-align: center;
 }
 .centro {
     text-align: center;
@@ -36,12 +65,17 @@ h3 {
     bottom: 10px;
     right: 15px;
 }
-.redes {
-    width: 60px;
-}
-header {
-    background-color: rgb(229, 186, 216) ;
-}
 footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
     background-color: rgb(182, 179, 177);
+    height: 220px;
+}
+.infopersonal h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+    color: papayawhip;
 }
