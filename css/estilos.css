@@ -6,15 +6,17 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content:space-evenly;
-    justify-items: center;
+    /* justify-items: center; */
     align-items: center;
-    background-color: rgb(243, 237, 241) ; 
+    background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+    /* background-color: rgb(243, 237, 241) ;  */
+    min-height: 20vh;
 }
 .logo {
     display: flex;
     justify-content: center;
-    width: 30%;
     margin: 5px;
+    /* width: 25%; */    
 }
 .titulo {
     font-family:'Pacifico', cursive;
@@ -26,29 +28,37 @@ header {
 }
 .redes1 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin: 10px;
     align-items: center;
     width: 25%;
     padding: 10px;
-    background-color: #CCD1D1;
 }
 body {
-    background: cornsilk url(../imagenes/fondo.jpg) ;
+    background: rgb(205, 248, 240) url(../imagenes/fondo.jpg) ;
     background-size: cover;
+    margin: 0%;  
 }
 nav {
     display: flex;
     justify-content: center;
     justify-content: space-around;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #9face6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    padding: 0.6rem;
 }
 a:hover {
     color:deeppink;
     font-style: oblique;
     font-weight: bold;
 }
-
+.mainbody {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /* justify-items: center; */
+}
 h2 {
     color:rgb(165, 121, 207);
     font-size: 200%;
@@ -64,15 +74,12 @@ img {
     width: 40%;
 }
 .gyoza {
-    width: 35vw;
+    width: 30vw;
 }
 h3 {
     color: palevioletred;
 }
 .que {
-    text-align: center;
-}
-.centro {
     text-align: center;
 }
 .iconowhat {
@@ -82,13 +89,26 @@ h3 {
     bottom: 10px;
     right: 15px;
 }
+main {
+    width: 60%;
+    padding: 3rem;
+}
+aside {
+    width: 30%;
+    padding: 2rem;
+}
+aside a {
+    text-decoration: none;
+    margin: 1rem;
+    font-size: 20px;
+}
 footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(182, 179, 177);
-    height: 220px;
+    background-color: rgb(206, 205, 205);
+    padding-top: 1rem;
 }
 .redes {
     height: 50px; 
@@ -99,5 +119,26 @@ footer {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
     text-decoration: none;
-    color: papayawhip;
+    color: rgb(20, 7, 24);
+}
+@media (max-width: 700px ) {
+    .zen, .logo {
+        display: none;
+    }
+}
+@media (max-width: 800px) {
+    body {
+        background-image: none;
+    }
+}
+@media (min-width: 900px) {
+    nav {
+        background-color: #d3f1ec;
+        font-size: 20px;
+    }
+}
+@media (min-width: 570px) {
+    .dibujo {
+        display: none;
+    }
 }
