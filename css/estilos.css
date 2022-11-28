@@ -38,6 +38,7 @@ header {
 body {
     background: rgb(205, 248, 240) url(../imagenes/fondo.jpg) ;
     background-size: cover;
+    align-items: center;
     margin: 0%;
 }
 nav {
@@ -45,6 +46,8 @@ nav {
     justify-content: center;
     justify-content: space-around;
     background-color: #9face6;
+    font-weight: bold;
+    font-size: 1.6rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 0.6rem;
 }
@@ -60,18 +63,20 @@ a:hover {
     /* justify-items: center; */
 }
 h2 {
-    color:rgb(165, 121, 207);
-    font-size: 200%;
+    color:rgb(33, 5, 59);
+    font-size: 2.6rem;
     text-decoration-line: underline;
     font-family: 'Poor Story', cursive;
 }
 p {
     color: rgb(50, 8, 78);
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
     text-align: center;
 }
 img {
     width: 40%;
+    border-radius: 10px;
 }
 .gyoza {
     width: 30vw;
@@ -90,17 +95,30 @@ h3 {
     right: 15px;
 }
 main {
-    width: 60%;
+    width: 65%;
     padding: 3rem;
 }
 aside {
+    padding-top: 10rem;
     width: 30%;
-    padding: 2rem;
+    margin: 2rem;
 }
 aside a {
     text-decoration: none;
     margin: 1rem;
     font-size: 20px;
+}
+/* .titlecards {
+    margin: 6rem; */
+/* } */
+.card {
+    margin-top: 2rem;
+    border-radius: 15px;
+    box-shadow: 0px 1px 10px rgb(197, 186, 204) ;
+}
+.card:hover {
+    box-shadow: 5px 5px 20px rgb(95, 90, 99);
+    transform: translateY(-4%);
 }
 footer {
     display: flex;
@@ -108,7 +126,7 @@ footer {
     justify-content: space-around;
     align-items: center;
     background-color: rgb(206, 205, 205);
-    padding-top: 1rem;
+    padding-top: 1.5rem;
 }
 .redes {
     height: 50px;
