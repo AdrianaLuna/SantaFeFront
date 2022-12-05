@@ -9,7 +9,6 @@ header {
     /* justify-items: center; */
     align-items: center;
     background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
-    /* background-color: rgb(243, 237, 241) ;  */
     min-height: 20vh;
 }
 .logo {
@@ -36,10 +35,13 @@ header {
     padding: 10px;
 }
 body {
-    background: rgb(205, 248, 240) url(../imagenes/fondo.jpg) ;
-    background-size: cover;
+    background-color: rgb(250, 246, 241);
     align-items: center;
     margin: 0%;
+}
+.modo {
+    margin: 0.5rem;
+    border-radius: 2px ;
 }
 nav {
     display: flex;
@@ -56,6 +58,67 @@ a:hover {
     font-style: oblique;
     font-weight: bold;
 }
+
+
+/* modo nocturno */
+.switch{
+    position: relative;
+    width: 3.5rem;
+    height: 2rem;
+}
+.switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(215, 215, 228);
+    transition: 0.4s;
+    border-radius: 30px;
+}
+.slider::before{
+    position: absolute;
+    content: "";
+    height: 1.4rem;
+    width: 1.4rem;
+    border-radius: 20px;
+    left: 0.3rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
+    transition: 0.4s;
+}
+input:checked + .slider{
+    background-color: #37393f;
+}
+input:checked + .slider::before{
+    left: calc(100% - 1.7rem);
+    background: #37393f;
+    box-shadow: 
+    inset -3px -2px 5px -2px #8983f7,
+    inset -10px -4px 0 0 #a3dafb;
+}
+body.dark {
+    background-color: #212121;
+    color:#f5f5f5;
+}
+.dark p {
+    color:#f5f5f5;
+}
+.dark h2 {
+    color:#f5f5f5;
+}
+.dark h5 {
+    color:#212121;
+}
+
+
 .mainbody {
     display: flex;
     flex-wrap: wrap;
@@ -84,12 +147,8 @@ img {
 h3 {
     color: palevioletred;
 }
-.que {
-    text-align: center;
-}
 .iconowhat {
     width: 60px;
-    /* width: 7%; */
     position: fixed;
     bottom: 10px;
     right: 15px;
@@ -108,11 +167,8 @@ aside a {
     margin: 1rem;
     font-size: 20px;
 }
-/* .titlecards {
-    margin: 6rem; */
-/* } */
 .card {
-    margin-top: 2rem;
+    margin: 2vh;
     border-radius: 15px;
     box-shadow: 0px 1px 10px rgb(197, 186, 204) ;
 }
@@ -133,12 +189,10 @@ footer {
     width: 50px;
     margin: 5px;
 }
-.infopersonal h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    text-decoration: none;
-    color: rgb(20, 7, 24);
+.btn btn-light{
+    border-radius: 5px;
 }
+
 @media (max-width: 575px){
     .zen {
         display: none;
